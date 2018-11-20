@@ -1,0 +1,32 @@
+{
+  "name": "vkbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "base64-to-image": "^1.0.2",
+    "botact": "^2.4.2",
+    "express": "^4.16.3",
+    "gm": "^1.23.1",
+    "im": "^0.4.0",
+    "imagemagick-composite": "^0.1.2",
+    "mocha": "^5.2.0",
+    "mysql": "^2.16.0",
+    "node-phantom": "^0.2.5",
+    "node-vk-bot-api": "^1.2.0",
+    "node-vkapi": "^3.0.7",
+    "phantomjs": "^2.1.7",
+    "request": "^2.87.0",
+    "restler": "^3.4.0",
+    "rgb-hex": "^2.1.0",
+    "stream": "0.0.2",
+    "viber-bot": "^1.0.13",
+    "webpage": "^0.3.0",
+    "zombie": "^6.1.3"
+  }
+}

@@ -1,0 +1,2 @@
+https://oauth.vk.com/authorize
+?client_id=1&display=page&redirect_uri=http://vk.com/blank.html&scope=messages,friends,photos&response_type=token
