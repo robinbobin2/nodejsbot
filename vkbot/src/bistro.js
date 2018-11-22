@@ -14,8 +14,8 @@ const viber = new ViberBot({
     avatar: "http://viber.com/avatar.jpg" // It is recommended to be 720x720, and no more than 100kb.
 });
 const botact = new Botact({
-    token: '1df9867e800428872f3ac5c67436e5990c29525d6beba44d0dcd6c754a3820f2088cd5344779b8f5c25ec',
-    confirmation: 'fc132ca0'
+    token: '75e1b9fbf4202bffaa69b23bb1e03ad24d203ae01d7118d24211b3068074b4ff0128c665b053c16121fe8',
+    confirmation: 'b6383b11'
 })
 const mysql = require('mysql');
 
