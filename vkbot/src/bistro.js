@@ -1113,7 +1113,7 @@ const webhookUrl = process.env.WEBHOOK_URL;
 //     cert: ...,
 //     ca: ...
 // }; // Trusted SSL certification (not self-signed).
-https.createServer(viber.middleware()).listen(port, () => viber.setWebhook(webhookUrl));
+// https.createServer(viber.middleware()).listen(port, () => viber.setWebhook(webhookUrl));
 app.use(bodyParser.json());
 
 app.use("/viber/webhook", viber.middleware());
