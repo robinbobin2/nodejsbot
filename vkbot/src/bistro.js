@@ -1097,26 +1097,8 @@ botact.command('Частный дом (коттедж)', function (ctx) {
 botact.event('group_join', ({ reply }) => reply('Спасибо за подписку! Нажмите на кнопку "Начать", чтобы оформить заказ'));
 botact.event('group_leave', ({ reply }) => reply('Очень жаль, что отписались, ждем вас снова'));
 
-// Perfect! Now here's the key part:
-viber.on(BotEvents.MESSAGE_RECEIVED, (message, response) => {
-    // Echo's back the message to the client. Your bot logic should sit here.
-    response.send(message);
-});
-const https = require('https');
-const port = 80;
 
-// Viber will push messages sent to this URL. Web server should be internet-facing.
-const webhookUrl = process.env.WEBHOOK_URL;
-
-// const httpsOptions = {
-//     key: ...,
-//     cert: ...,
-//     ca: ...
-// }; // Trusted SSL certification (not self-signed).
-// https.createServer(viber.middleware()).listen(port, () => viber.setWebhook(webhookUrl));
 app.use(bodyParser.json());
-
-app.use("/viber/webhook", viber.middleware());
 
 
 app.post('/', botact.listen);
@@ -1124,4 +1106,4 @@ app.get('/test', function () {
     return "asas";
 });
 
-// app.listen(3000);
+app.listen(3000);
