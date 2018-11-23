@@ -1103,7 +1103,7 @@ viber.on(BotEvents.MESSAGE_RECEIVED, (message, response) => {
     response.send(message);
 });
 const https = require('https');
-const port = 3000;
+const port = 80;
 
 // Viber will push messages sent to this URL. Web server should be internet-facing.
 const webhookUrl = process.env.WEBHOOK_URL;
