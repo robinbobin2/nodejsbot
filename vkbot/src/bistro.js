@@ -1094,7 +1094,7 @@ botact.command('Частный дом (коттедж)', function (ctx) {
 
 
 
-botact.event('group_join', ({ reply }) => reply('Спасибо за подписку! Нажмите на кнопку "Начать", чтобы оформить заказ'));
+botact.event('group_join', ({ reply }) => reply('Спасибо за подписку! Если у Вас есть какие-либо вопросы, пишите нам сюда!'));
 botact.event('group_leave', ({ reply }) => reply('Очень жаль, что отписались, ждем вас снова'));
 
 
